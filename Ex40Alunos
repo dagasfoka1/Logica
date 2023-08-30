@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-int N, i, X;
+int N, i, X, Apv, Rpv, Rec;
 int P1[5];
 int P2[5];
-float M;
+float M, Por;
 int main()
 {
 for(i=0;i<5;i++){
@@ -15,16 +15,24 @@ scanf("%d", &P2[i]);
 M=(P2[i]+P1[i])/2;
 if (M>=6) {
     printf("O %d° aluno(a) foi aprovado.\n", X)  ;
-    
+    Apv= Apv +1;
 }
 else{
     if(M>=4){
      printf("O %d° aluno(a) ficou de rec.\n", X)  ;
+     Rec= Rec +1;
     }
     else{
     printf("O %d° aluno(a) foi reprovado.\n", X)  ;
+    Rpv= Rpv+1;
 }
 }
 }
+Por=Apv*100/5;
+printf("A porcentagem de aprovados é %.0f %%\n", Por);
+Por=Rpv*100/5;
+printf("A porcentagem de reprovados é %.0f %%\n", Por);
+Por=Rec*100/5;
+printf("A porcentagem de rec é %.0f %%\n", Por);
 return 0;
 }
