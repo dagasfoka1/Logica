@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+int i,soma,N;
+
+soma=0;
+    for (i=0;i<=100;i++){
+        N=i;
+        printf("%d\n", N );
+        soma=soma+N;
+    }
+ printf("\nSoma:%d", soma) ;
+
+}
