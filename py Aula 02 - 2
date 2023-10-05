@@ -1,0 +1,7 @@
+B = float(input("Digite o valor B"))
+A = float(input("Digite o valor A "))
+B= A*B
+A=B/A
+B=B/A
+print("O volume do tonel é: ",B )
+print("O volume do tonel é: ",A )
