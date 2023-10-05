@@ -1,0 +1,4 @@
+R= float(input("Digite o valor do Raio do Tonel: "));
+A= float(input("Digite o valor do Área do Tonel: "));
+Volume=3.1415 *R**2 * A;
+print("O volume do tonel é: ",Volume)
