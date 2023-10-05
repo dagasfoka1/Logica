@@ -1,0 +1,4 @@
+A = float(input("Digite o valor da nota 1: "))
+L = float(input("Digite o valor da nota 2: "))
+V = (A+L)/2
+print("A média é: ",V )
