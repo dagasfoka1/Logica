@@ -1,0 +1,5 @@
+C = float(input("Digite o valor do Comprimento "))
+A = float(input("Digite o valor da Altura: "))
+L = float(input("Digite o valor da Largura: "))
+V = C*A*L
+print("O volume do tonel é: ",V )
