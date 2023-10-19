@@ -1,0 +1,159 @@
+n=int(input("Digite um numero inteiro: "));
+m=n//1000
+n=n%1000
+c=n//100
+n=n%100
+d=n//10
+u=n%10
+S=m+c+d+u+n
+if(S<0):
+   n=n*-1
+   m=n//1000
+   n=n%1000
+   c=n//100
+   n=n%100
+   d=n//10
+   u=n%10
+if (m==1):
+    M="um"
+elif (m==2):
+    M="dois"
+elif (m==2):
+    M="três"
+elif (m==3):
+    M="quatro"
+elif (m==4):
+    M="cinco"
+elif (m==5):
+    M="seis"
+elif (m==6):
+    M="sete"
+elif (m==7):
+    M="oito"
+elif (m==8):
+    M="nove"
+if (c==1):
+    C="cento"
+elif (c==2):
+    C="duzentos"
+elif (c==2):
+    C="trêzentos"
+elif (c==3):
+    C="quatrocentos"
+elif (c==4):
+    C="quinhentos"
+elif (c==5):
+    C="seiscentos"
+elif (c==6):
+    C="setecentos"
+elif (c==7):
+    C="oitocentos"
+elif (c==8):
+    C="novecentos"
+if (d==1):
+    D="dez"
+elif (d==2):
+    D="vinte"
+elif (d==2):
+    D="trinta"
+elif (d==3):
+    D="quarenta"
+elif (d==4):
+    D="cinquenta"
+elif (d==5):
+    D="sessenta"
+elif (d==6):
+    D="setenta"
+elif (d==7):
+    D="oitenta"
+elif (d==8):
+    D="noventa"
+if (u==1):
+    U="um"
+elif (u==2):
+    U="dois"
+elif (u==3):
+    U="três"
+elif (u==4):
+    U="quatro"
+elif (u==5):
+    U="cinco"
+elif (u==6):
+    U="seis"
+elif (u==7):
+    U="sete"
+elif (u==8):
+    U="oito"
+elif (u==9):
+    U="nove"
+if (n==10):
+    ir="dez"
+    d=0
+    u=0
+if (n==11):
+    ir="onze"
+    d=0
+    u=0
+if (n==12) :
+    ir="doze"
+    d=0
+    u=0
+if (n==13) :
+    ir="treze"
+    d=0
+    u=0
+if (n==14) :
+    ir="quatorze"
+    d=0
+    u=0
+if (n==15) :
+    ir="quinte"
+    d=0
+    u=0
+if (n==16) :
+    ir="dezesseis"
+    d=0
+    u=0
+if (n==17) :
+    ir="dezessete"
+    d=0
+    u=0
+if (n==18) :
+    ir="dezoito"
+    d=0
+    u=0
+if (n==19) :
+    ir="dezenove"
+    d=0
+    u=0
+
+if (m==0) and (c==0) and (d==0) and (u==0) and (n==0):
+    print("zero.")
+if (m==0) and (c==0) and (d==0) and (u==0):
+    print(ir)
+elif (m==0) and (c==0) and (d==0):
+    print(U)
+elif (m==0) and (c==0) and (u==0):
+    print(D)
+elif (m==0) and (d==0) and (u==0) and (c==1):
+    print("cem")
+elif (u==0) and (c==0) and (d==0):
+    print(M)
+elif (m==0) and (c==0):
+    print(D,"e",U)
+elif (m==0) and (c==0) :
+    print(D,"e",U)
+elif (m==0) and (d==0):
+    print(C,"e",U)
+elif (d==0) and (c==0):
+    print(M,"e",U)
+elif (u==0) and (c==0):
+    print(M,"e",D)
+elif (d==0) and (u==0):
+    print(M,"e",C),
+elif (c==0) and (m==0):
+    print(M,"e",D)
+elif (d==0) and (c==0):
+    print(M,"e",U)
+elif (u==0) and (c==0):
+    print(M,"e",D)
