@@ -1,0 +1,48 @@
+1.
+h=float(input("Digite a altura: "))
+b=float(input("Digite a base: "))
+A=h*b
+P=2*h+2*b
+print("A área é ", A, "e o perímetro é: ", P)
+
+2.
+r=float(input("Digite o raio: "))
+A=r**2
+C=2*r
+print("A aréa é igual à ",A,"π e o perímetro é ",C,"π")
+
+3.
+r1=float(input("Digite o lado: "))
+r2=float(input("Digite o lado: "))
+r3=float(input("Digite o lado: "))
+P=r1+r2+r3
+print("O perímetro é ",P)
+
+4.
+r1=float(input("Digite um número inteiro: "))
+print(r1 +1)
+
+5.
+r1=float(input("Digite um número inteiro a ser divido: "))
+r2=float(input("Digite um número inteiro que dividira o outro: "))
+q=r1//r2
+r=r1%r2
+print("O quociente da divisão inteira entre ",r1,"e ",r2,"é : quociente= ",q,"e resto igual à: ",r)
+
+6.
+i=float(input("Digite sua idade em dias: "))
+a=i//365
+m=(i%365)//30
+d=(i%365)%30
+print("Sua idade é igual à: ",a,"anos" ,m," meses e", d, "dias")
+
+7.
+i=float(input("Digite um número inteiro de até 3 algarismos"))
+if(i>9999 or i<-9999):
+    print("Você precisa digitar um número de até 3 algarismos")
+else:
+    c=int(i//100)
+    i=i%100
+    d=int(i//10)
+    u=int(i%10)
+    print("O numero é: ", u,d,c)
