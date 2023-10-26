@@ -46,3 +46,58 @@ else:
     d=int(i//10)
     u=int(i%10)
     print("O numero é: ", u,d,c)
+
+8.
+i=float(input("Digite um número inteiro "))
+if(i>=0):
+    print("positivo")
+else:
+    print("negativo")
+
+9.
+i=float(input("Digite um número inteiro "))
+if(i>=0):
+    print("|",i,"|")
+else:
+    i=i*-1
+    print("|",i,"|")
+
+10.
+i=float(input("Digite um número inteiro "))
+if(i%2==1):
+    print("impar")
+else:
+    print("par")
+
+11.
+i=float(input("Digite um número inteiro "))
+maior=i
+X= []
+for x in range(2):
+    x=float(input("Digite um número inteiro "))
+    X.append(x)
+for x in range(2):
+    if(maior<X[x]):
+        maior=X[x]
+print(maior)
+
+12.
+
+
+------------------------------
+Primo: 
+i=int(input("Digite um número inteiro "))
+x=i-1
+n=i
+S=0
+if(i==2):
+    print("É primo")
+    else:
+        while(x>=1):
+            if(n%x==0):
+                S=S+1
+            x=x-1
+        if(S>=2):
+            print("Não é primo")
+        else: 
+            print("É primo")
