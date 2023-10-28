@@ -81,11 +81,13 @@ for x in range(2):
         maior=X[x]
 print(maior)
 
-12.D=int(input("Digite os dias equivalente a sua idade"))
+12.D=int(input("Digite os dias equivalente a sua idade :"))
 c=D//365
 m=(D%365)//30
 d=(D%365)%30
-print(d)
+print("Sua idade é ",c,"anos ",m,"meses e ", d," dias.")
+
+13.
 
 
 ------------------------------
